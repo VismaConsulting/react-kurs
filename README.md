@@ -13,7 +13,7 @@ You will have to choose a name for your group, which you will use in the url to 
 
 
 |Metode| URL                                                    | What does it do?                          | Content-type     |
-|------| -------------------------------------------------------|:-----------------------------------------:| ----------------:|
+|------| -------------------------------------------------------|-------------------------------------------| -----------------|
 |GET   | http://course.abbsnabb.com/:groupName/posts            | Lists all posts                           | application/json |
 |POST  | http://course.abbsnabb.com/:groupName/posts            | Creates a post.                           | application/json |
 |GET   | http://course.abbsnabb.com/:groupName/posts/:postId    | Fetches the post with the given postId    | application/json |
