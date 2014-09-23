@@ -2,7 +2,8 @@
 
 Whatup? Here you'll get a great intro to react.
 
-## Goal
+## Goals
+
 
 ## Fast Intro
 
@@ -45,12 +46,17 @@ var PostBox = React.createClass({
 React.renderComponent( <PostBox />, document.getElementById('content'));
 ```
 
+### Hello, World!
+
+We now have a functioning website, although not the prettiest one in the world.
+
 ![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
+
 
 ## API
 
 The API you can work against is located at http://course.abbsnabb.com/. 
-You will have to choose a name for your group, which you will use in the url to get unique data. An example of a group name is 'horny-panda'.
+You will have to choose a name for your group, which you will use in the url to get unique data. An example for a group name is 'horny-panda'.
 
 
 |Metode| URL                                                    | What does it do?                          | Content-Type     |
