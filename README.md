@@ -12,7 +12,7 @@ We will only have two files, index.html and app.js. React plays very well with f
 
 ### index.html
 
-'''html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,12 +27,12 @@ We will only have two files, index.html and app.js. React plays very well with f
 <div id="content"></div>
 </body>
 </html>
-'''
+```
 
 ### app.js
 
 
-'''javascript
+```javascript
 /** @jsx React.DOM */
 
 var PostBox = React.createClass({
@@ -46,7 +46,7 @@ var PostBox = React.createClass({
 });
 
 React.renderComponent( <PostBox />, document.getElementById('content'));
-'''
+```
 
 
 
