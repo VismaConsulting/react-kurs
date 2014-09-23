@@ -11,7 +11,7 @@ Our blog will consist of one page with a list of blog posts, just like this:
 
 ![Mockup of blog](https://dl.dropboxusercontent.com/u/488107/react/blog-mockup.png)
 
-We will also have a form for adding posts.
+We will also add a form for creating new posts.
 
 
 ## Fast Intro
