@@ -4,8 +4,6 @@ Whatup? Here you'll get a great intro to react.
 
 ## Goal
 
-
-
 ## Fast Intro
 
 We will only have two files, index.html and app.js. React plays very well with frameworks that splits your webapp into modules, like browserify, webpack and require.js, but we will not touch on that in this course.
@@ -17,7 +15,7 @@ We will only have two files, index.html and app.js. React plays very well with f
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Kontakter</title>
+    <title>Awesome blog</title>
     <script src="http://fb.me/react-0.11.1.js"></script>
     <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
@@ -28,7 +26,6 @@ We will only have two files, index.html and app.js. React plays very well with f
 </body>
 </html>
 ```
-
 ### app.js
 
 
@@ -48,7 +45,7 @@ var PostBox = React.createClass({
 React.renderComponent( <PostBox />, document.getElementById('content'));
 ```
 
-
+![Behold, the Internet](https://www.dropbox.com/s/mf649j3clrg158a/Kontakter-19-29-51.png?dl=0)
 
 ## API
 
