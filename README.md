@@ -4,6 +4,7 @@ Whatup? Here you'll get a great intro to react.
 
 ## Goal
 
+### Blog
 At the end of this workshop, we will have created a blog. Blogs are awesome for showing how much you know about shopping and putting on make-up. Coincidentally,  they're also pretty great for learning new technologies.
 
 Our blog will consist of one page with a list of blog posts, just like this:
@@ -12,11 +13,27 @@ Our blog will consist of one page with a list of blog posts, just like this:
 
 We will also add a form for creating new posts.
 
-## Fast Intro
+### Work arrangement
+
+Our work arrangement will be like this:
+
+* We will split in groups of two or three
+* There will be a number of tasks. The first one we will do together, and the next ones you will do in your groups.
+* There will be prizes for the first group to complete each task.
+* There will be consolation prizes for group 2-∞ to finish each task.
+* There will be an awesome prize for the group who gets the furthest.
+
+Did everyone understand? Allright, let's go!
+
+## Tasks
+
+### Task 0: Hello, World!
+
+> Do a Hello, World! in React. Use two files: `index.html` and `app.js`
 
 We will only have two files, `index.html` and `app.js`. React plays very well with frameworks that splits your webapp into modules, like browserify, webpack and require.js, but we will not touch on that in this course.
 
-### index.html
+#### index.html
 
 ```html
 <!DOCTYPE html>
@@ -35,7 +52,7 @@ We will only have two files, `index.html` and `app.js`. React plays very well wi
 </html>
 ```
 
-### app.js
+#### app.js
 
 ```js
 /** @jsx React.DOM */
@@ -53,13 +70,13 @@ var PostBox = React.createClass({
 React.renderComponent( <PostBox />, document.getElementById('content'));
 ``` 
 
-### Hello, World!
+#### Hello, World!
 
 We now have a functioning website, although not the prettiest one in the world. Congrats!
 
 ![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
 
-### What was React here?
+#### What was React here?
 
 * `React.createClass({});`
 * `React.renderComponent({});`
@@ -69,7 +86,7 @@ We now have a functioning website, although not the prettiest one in the world. 
 
 All React-components you create from now will be created using `React.createClass({})`.
 
-## Hierarchy of Components
+### Hierarchy of Components
 
 So, we have our first react-component up and going, but it's not very advanced yet. We need more components.
 
@@ -85,6 +102,16 @@ We already made the `PostBox`. The `PostBox` has a `PostList` and a `PostForm`. 
 Each component is responsible for its own markup, for example: `PostList` doesn't care how `Post` decides to present itself.
 
 Allright, let's quickly put up a skeleton for these components.
+
+### Task 1: Structure
+
+> Create new components `PostList`, `PostForm` and `Post` with dummy text. Place instances of `PostList` and `PostForm` inside `PostBox`. Place three instances of `Post` inside the `PostList`.
+
+
+#### Cheat sheet
+
+This is how you do it:
+
 
 
 
