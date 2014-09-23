@@ -2,16 +2,26 @@
 
 Whatup? Here you'll get a great intro to react.
 
-## Goals
+## Goal
+
+At the end of this workshop, we will have created a blog. Remember blogs? They were pretty cool back in the day. \
+What more; they're pretty great for learning new technologies.
+
+Our blog will consist of one page with a list of blog posts, just like this:
+
+![Mockup of blog](https://dl.dropboxusercontent.com/u/488107/react/blog-mockup.png)
+
+We will also have a form for adding posts.
 
 
 ## Fast Intro
 
-We will only have two files, index.html and app.js. React plays very well with frameworks that splits your webapp into modules, like browserify, webpack and require.js, but we will not touch on that in this course.
+We will only have two files, index.html and app.js. React plays very well with frameworks that splits your webapp \
+into modules, like browserify, webpack and require.js, but we will not touch on that in this course.
 
 ### index.html
 
-    ```html
+    :::html
     <!DOCTYPE html>
     <html>
     <head>
@@ -31,7 +41,7 @@ We will only have two files, index.html and app.js. React plays very well with f
 ### app.js
 
 
-    ```javascript
+    :::javascript
     /** @jsx React.DOM */
     
     var PostBox = React.createClass({
@@ -45,14 +55,22 @@ We will only have two files, index.html and app.js. React plays very well with f
     });
     
     React.renderComponent( <PostBox />, document.getElementById('content'));
-    ```
+    
 
 ### Hello, World!
 
-We now have a functioning website, although not the prettiest one in the world.
+We now have a functioning website, although not the prettiest one in the world. Congrats!
 
 ![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
 
+### What was react here?
+
+* React.createClass({});
+* React.renderComponent({});
+* JSX
+
+CreateClass and renderComponent are the only essential parts of the API. JSX, which lets you write something similar \
+to HTML inside the JavaScript, is purely voluntary.
 
 ## Hierarchy of Components
 
