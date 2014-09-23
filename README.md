@@ -1,12 +1,10 @@
-
-react.js-course
+# react.js-course
 
 Whatup? Here you'll get a great intro to react.
 
 ## Goal
 
-At the end of this workshop, we will have created a blog. Remember blogs? They were pretty cool back in the day. \
-What more; they're pretty great for learning new technologies.
+At the end of this workshop, we will have created a blog. Blogs are awesome for showing how much you know about shopping and putting on make-up. Coincidentally,  they're also pretty great for learning new technologies.
 
 Our blog will consist of one page with a list of blog posts, just like this:
 
@@ -14,49 +12,46 @@ Our blog will consist of one page with a list of blog posts, just like this:
 
 We will also add a form for creating new posts.
 
-
 ## Fast Intro
 
-We will only have two files, index.html and app.js. React plays very well with frameworks that splits your webapp \
-into modules, like browserify, webpack and require.js, but we will not touch on that in this course.
+We will only have two files, `index.html` and `app.js`. React plays very well with frameworks that splits your webapp into modules, like browserify, webpack and require.js, but we will not touch on that in this course.
 
 ### index.html
 
-    :::html
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Awesome blog</title>
-        <script src="http://fb.me/react-0.11.1.js"></script>
-        <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
-        <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-        <script src="app.js" type="text/jsx"></script>
-    </head>
-    <body>
-    <div id="content"></div>
-    </body>
-    </html>
-    ```
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Awesome blog</title>
+    <script src="http://fb.me/react-0.11.1.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="app.js" type="text/jsx"></script>
+</head>
+<body>
+<div id="content"></div>
+</body>
+</html>
+```
 
 ### app.js
 
+```js
+/** @jsx React.DOM */
 
-    :::javascript
-    /** @jsx React.DOM */
-    
-    var PostBox = React.createClass({
-        render: function(){
-            return (
-                <div id="postContainer">
-                    <h1>Here will be posts!</h1>
-                </div>
-                )
-        }
-    });
-    
-    React.renderComponent( <PostBox />, document.getElementById('content'));
-    
+var PostBox = React.createClass({
+    render: function(){
+        return (
+            <div id="postContainer">
+                <h1>Here will be posts!</h1>
+            </div>
+            )
+    }
+});
+
+React.renderComponent( <PostBox />, document.getElementById('content'));
+``` 
 
 ### Hello, World!
 
@@ -64,18 +59,32 @@ We now have a functioning website, although not the prettiest one in the world. 
 
 ![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
 
-### What was react here?
+### What was React here?
 
-* React.createClass({});
-* React.renderComponent({});
+* `React.createClass({});`
+* `React.renderComponent({});`
 * JSX
 
-CreateClass and renderComponent are the only essential parts of the API. JSX, which lets you write something similar \
-to HTML inside the JavaScript, is purely voluntary.
+`createClass` and `renderComponent` are the only essential parts of the API. JSX, which lets you write something which looks like HTML inside the JavaScript, is purely voluntary.
+
+All React-components you create from now will be created using `React.createClass({})`.
 
 ## Hierarchy of Components
 
-So, we have our first react-component up and going, but it's not very advanced yet.
+So, we have our first react-component up and going, but it's not very advanced yet. We need more components.
+
+Our component tree will look like this:
+
+* PostBox
+   * PostForm
+   * PostList
+      * Post
+      
+We already made the `PostBox`. The `PostBox` has a `PostList` and a `PostForm`. The `PostList` can contain many `Posts`. This should a pretty straight forward arrangement. 
+
+Each component is responsible for its own markup, for example: `PostList` doesn't care how `Post` decides to present itself.
+
+Allright, let's quickly put up a skeleton for these components.
 
 
 
