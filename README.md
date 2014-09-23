@@ -11,46 +11,53 @@ We will only have two files, index.html and app.js. React plays very well with f
 
 ### index.html
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Awesome blog</title>
-    <script src="http://fb.me/react-0.11.1.js"></script>
-    <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-    <script src="app.js" type="text/jsx"></script>
-</head>
-<body>
-<div id="content"></div>
-</body>
-</html>
-```
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Awesome blog</title>
+        <script src="http://fb.me/react-0.11.1.js"></script>
+        <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+        <script src="app.js" type="text/jsx"></script>
+    </head>
+    <body>
+    <div id="content"></div>
+    </body>
+    </html>
+    ```
+
 ### app.js
 
 
-```javascript
-/** @jsx React.DOM */
-
-var PostBox = React.createClass({
-    render: function(){
-        return (
-            <div id="postContainer">
-                <h1>Here will be posts!</h1>
-            </div>
-            )
-    }
-});
-
-React.renderComponent( <PostBox />, document.getElementById('content'));
-```
+    ```javascript
+    /** @jsx React.DOM */
+    
+    var PostBox = React.createClass({
+        render: function(){
+            return (
+                <div id="postContainer">
+                    <h1>Here will be posts!</h1>
+                </div>
+                )
+        }
+    });
+    
+    React.renderComponent( <PostBox />, document.getElementById('content'));
+    ```
 
 ### Hello, World!
 
 We now have a functioning website, although not the prettiest one in the world.
 
 ![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
+
+
+## Hierarchy of Components
+
+So, we have our first react-component up and going, but it's not very advanced yet.
+
 
 
 ## API
