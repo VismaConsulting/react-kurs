@@ -45,7 +45,7 @@ var PostBox = React.createClass({
 React.renderComponent( <PostBox />, document.getElementById('content'));
 ```
 
-![Behold, the Internet](https://www.dropbox.com/s/mf649j3clrg158a/Kontakter-19-29-51.png?dl=0)
+![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
 
 ## API
 
