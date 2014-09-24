@@ -26,9 +26,9 @@ var PostList = React.createClass({
         return (
             <div className="postList">
                 <h1>Posts</h1>
-                <Post />
-                <Post />
-                <Post />
+                <Post title="Hello" author="Anders Emil" content="Dette er en post" />
+                <Post title="How do you do?" author="Anders Emil" content="Dette er også en post" />
+                <Post title="Fallera" author="Anders Emil" content="lorem ipsum" />
             </div>
             )
     }
@@ -38,7 +38,9 @@ var Post = React.createClass({
     render: function() {
         return (
             <div className="post">
-                <p>I am a post</p>
+                <h2 className="title">{this.props.title}</h2>
+                <small className="author">{this.props.author}</small>
+                <p className="content">{this.props.content}</p>
             </div>
             )
     }

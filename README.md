@@ -41,13 +41,14 @@ We will only have two files, `index.html` and `app.js`. React plays very well wi
 <head>
     <meta charset="utf-8">
     <title>Awesome blog</title>
+</head>
+<body>
+    <div id="content"></div>
+    
     <script src="http://fb.me/react-0.11.1.js"></script>
     <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script src="app.js" type="text/jsx"></script>
-</head>
-<body>
-<div id="content"></div>
 </body>
 </html>
 ```
@@ -76,7 +77,7 @@ We now have a functioning website, although not the prettiest one in the world. 
 
 ![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
 
-#### What was React here?
+#### What was React about this?
 
 * `React.createClass({});`
 * `React.renderComponent({});`
