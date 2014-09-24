@@ -22,20 +22,52 @@ var PostBox = React.createClass({
             }.bind(this)
         });
     },
+    handlePostSubmit: function(post) {
+        var posts = this.state.data;
+        var newPosts = posts.concat([post]);
+        this.setState({data: newPosts});
+        $.ajax({
+            url: this.props.url,
+            dataType: 'json',
+            contentType: 'application/json',
+            type: 'POST',
+            data: JSON.stringify(post),
+            success: function(data) {
+                this.setState({data: data});
+            }.bind(this),
+            error: function(xhr, status, err) {
+                console.error(this.props.url, status, err.toString());
+            }.bind(this)
+        });
+    },
     render: function(){
         return (
             <div className="postContainer">
                 <PostList data={this.state.data}/>
-                <PostForm />
+                <PostForm onPostSubmit={this.handlePostSubmit} />
             </div>
             )
     }
 });
 
 var PostForm = React.createClass({
+    handleSubmit: function(e) {
+        e.preventDefault();
+        var title = this.refs.title.getDOMNode().value.trim();
+        var author = this.refs.author.getDOMNode().value.trim();
+        var content = this.refs.content.getDOMNode().value.trim();
+        if (!title || !author || !content) {
+            return;
+        }
+        this.props.onPostSubmit({title: title, author: author, content: content});
+        this.refs.title.getDOMNode().value = '';
+        this.refs.author.getDOMNode().value = '';
+        this.refs.content.getDOMNode().value = '';
+        return;
+    },
     render: function() {
         return (
-            <form className="postForm">
+            <form className="postForm" onSubmit={this.handleSubmit}>
                 <h3>Add new post</h3>
                 <div>
                     <input type="text" ref="title" placeholder="Title..." />
@@ -46,6 +78,7 @@ var PostForm = React.createClass({
                 <div>
                     <textarea ref="content" placeholder="Content..."></textarea>
                 </div>
+                <input type="submit" value="Post" />
             </form>
             )
     }
