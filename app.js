@@ -35,9 +35,18 @@ var PostBox = React.createClass({
 var PostForm = React.createClass({
     render: function() {
         return (
-            <div className="postForm">
-                Here will be a form
-            </div>
+            <form className="postForm">
+                <h3>Add new post</h3>
+                <div>
+                    <input type="text" ref="title" placeholder="Title..." />
+                </div>
+                <div>
+                    <input type="text" ref="author" placeholder="Author..." />
+                </div>
+                <div>
+                    <textarea ref="content" placeholder="Content..."></textarea>
+                </div>
+            </form>
             )
     }
 });
