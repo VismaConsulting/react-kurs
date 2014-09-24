@@ -1,10 +1,16 @@
 /** @jsx React.DOM */
 
+var posts = [
+    {title: "Post #1", author:"Anders Emil", content: "This is a typical post"},
+    {title: "Post #2", author:"Anders Emil", content: "This is another typical post"},
+    {title: "Post #3", author:"Anders Emil", content: "I love shopping"}
+];
+
 var PostBox = React.createClass({
     render: function(){
         return (
             <div className="postContainer">
-                <PostList />
+                <PostList data={this.props.data}/>
                 <PostForm />
             </div>
             )
@@ -23,12 +29,15 @@ var PostForm = React.createClass({
 
 var PostList = React.createClass({
     render: function() {
+        var postNodes = this.props.data.map(function (post) {
+            return (
+                <Post title={post.title} author={post.author} content={post.content} />
+                );
+        });
         return (
             <div className="postList">
                 <h1>Posts</h1>
-                <Post title="Hello" author="Anders Emil" content="Dette er en post" />
-                <Post title="How do you do?" author="Anders Emil" content="Dette er også en post" />
-                <Post title="Fallera" author="Anders Emil" content="lorem ipsum" />
+                {postNodes}
             </div>
             )
     }
@@ -46,4 +55,4 @@ var Post = React.createClass({
     }
 });
 
-React.renderComponent( <PostBox />, document.getElementById('content'));
+React.renderComponent( <PostBox data={posts} />, document.getElementById('content'));
