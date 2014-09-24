@@ -107,9 +107,56 @@ Allright, let's quickly put up a skeleton for these components.
 
 > Create new components `PostList`, `PostForm` and `Post` with dummy text. You don't need an actual form with inputs and buttons. Place instances of `PostList` and `PostForm` inside `PostBox`. Place three instances of `Post` inside the `PostList`.
 
+It should look something like this:
+![Task 1](https://dl.dropboxusercontent.com/u/488107/react/task1.png)
+
 #### Hints
 
 * Check out [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456) to see how to include modules in eachother.
+
+
+### Task 2: Properties
+
+> Each post should have three properties: title, author and content. Modify `Post` so it accepts properties, and modify `PostList` so that it provides properties for all posts.
+
+
+### Task 3: Dynamically load posts from a list-variable
+
+> You will use the given array under to 
+
+
+```js
+var posts = [
+
+];
+
+```
+### Moving to a server
+
+From now on, we will use a server for storing and loading posts. To use a server, our index.html-file needs to be hosted on a server. To do that you can use the following command: 
+
+```bash
+$ cd /path/to/web/folder/
+$ python -m SimpleHTTPServer
+```
+
+You can read about the API underneath.
+
+
+### Task 4: Load posts from the API 
+
+> Load posts from the API
+
+### Task 5: Create a Form
+
+
+### Task 6: Use the Form to Create Posts
+
+
+### Task 7: Make the Blog Look Good
+
+
+### Task 8: Single-page Application
 
 
 
