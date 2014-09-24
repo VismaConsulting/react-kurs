@@ -43,7 +43,11 @@ var PostBox = React.createClass({
     render: function(){
         return (
             <div className="postContainer">
+                <div className="page-header">
+                    <h1>Posts</h1>
+                </div>
                 <PostList data={this.state.data}/>
+                <hr />
                 <PostForm onPostSubmit={this.handlePostSubmit} />
             </div>
             )
@@ -67,18 +71,20 @@ var PostForm = React.createClass({
     },
     render: function() {
         return (
-            <form className="postForm" onSubmit={this.handleSubmit}>
+            <form className="postForm" role="form" onSubmit={this.handleSubmit}>
                 <h3>Add new post</h3>
-                <div>
-                    <input type="text" ref="title" placeholder="Title..." />
+                <div className="form-group">
+                    <label>Title</label>
+                    <input className="form-control" type="text" ref="title" placeholder="Title..." />
                 </div>
-                <div>
-                    <input type="text" ref="author" placeholder="Author..." />
+                <div className="form-group">
+                    <label>Author</label>
+                    <input className="form-control" type="text" ref="author" placeholder="Author..." />
                 </div>
-                <div>
-                    <textarea ref="content" placeholder="Content..."></textarea>
+                <div className="form-group">
+                    <textarea className="form-control" rows="3" ref="content" placeholder="Content..."></textarea>
                 </div>
-                <input type="submit" value="Post" />
+                <input type="submit" className="btn btn-default" value="Post" />
             </form>
             )
     }
@@ -93,7 +99,6 @@ var PostList = React.createClass({
         });
         return (
             <div className="postList">
-                <h1>Posts</h1>
                 {postNodes}
             </div>
             )
@@ -103,10 +108,14 @@ var PostList = React.createClass({
 var Post = React.createClass({
     render: function() {
         return (
-            <div className="post">
-                <h2 className="title">{this.props.title}</h2>
-                <small className="author">{this.props.author}</small>
-                <p className="content">{this.props.content}</p>
+            <div className="post panel panel-default">
+                <div className="panel-heading">
+                    <h3 className="panel-title">{this.props.title}</h3>
+                    <small className="author">{this.props.author}</small>
+                </div>
+                <div className="panel-body">
+                    {this.props.content}
+                </div>
             </div>
             )
     }
