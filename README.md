@@ -99,19 +99,17 @@ Our component tree will look like this:
       
 We already made the `PostBox`. The `PostBox` has a `PostList` and a `PostForm`. The `PostList` can contain many `Posts`. This should a pretty straight forward arrangement. 
 
-Each component is responsible for its own markup, for example: `PostList` doesn't care how `Post` decides to present itself.
+Each component is responsible for its own markup, for example: `PostList` doesn't care how `Post` decides to present itself. 
 
 Allright, let's quickly put up a skeleton for these components.
 
 ### Task 1: Structure
 
-> Create new components `PostList`, `PostForm` and `Post` with dummy text. Place instances of `PostList` and `PostForm` inside `PostBox`. Place three instances of `Post` inside the `PostList`.
+> Create new components `PostList`, `PostForm` and `Post` with dummy text. You don't need an actual form with inputs and buttons. Place instances of `PostList` and `PostForm` inside `PostBox`. Place three instances of `Post` inside the `PostList`.
 
+#### Hints
 
-#### Cheat sheet
-
-This is how you do it:
-
+* Check out [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456) to see how to include modules in eachother.
 
 
 
