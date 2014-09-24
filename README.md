@@ -121,17 +121,18 @@ It should look something like this:
 > Each post should have three properties: title, author and content. Modify `Post` so it accepts properties, and modify `PostList` so that it provides properties for all posts.
 
 
-### Task 3: Dynamically load posts from a list-variable
+### Task 3: Load the posts from a list-variable
 
-> You will use the given array under to 
-
+> You will have to display the posts contained in the posts-array underneath.
 
 ```js
 var posts = [
-
+    {title: "Post #1", author:"Anders Emil", content: "This is a typical post"},
+    {title: "Post #2", author:"Anders Emil", content: "This is another typical post"},
+    {title: "Post #3", author:"Anders Emil", content: "I love shopping"}
 ];
-
 ```
+
 ### Moving to a server
 
 From now on, we will use a server for storing and loading posts. To use a server, our index.html-file needs to be hosted on a server. To do that you can use the following command: 
