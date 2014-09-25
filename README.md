@@ -37,7 +37,7 @@ Did everyone understand? Allright, let's go!
 * Task 7: Style the app
 * Task 8: Create a single-post page
 
-###<a name="task0"></a> Task 0: Hello, World!
+### Task 0: Hello, World!
 
 > Do a Hello, World! in React. Use two files: `index.html` and `app.js`
 
@@ -114,7 +114,7 @@ Each component is responsible for its own markup, for example: `PostList` doesn'
 
 Allright, let's quickly put up a skeleton for these components.
 
-### <a name="task1"></a>Task 1: Structure
+### Task 1: Structure
 
 > Create new components `PostList`, `PostForm` and `Post` with dummy text. You don't need an actual form with inputs and buttons. Place instances of `PostList` and `PostForm` inside `PostBox`. Place three instances of `Post` inside the `PostList`.
 
@@ -126,7 +126,7 @@ Allright, let's quickly put up a skeleton for these components.
 #### End Result
 ![Task 1](https://dl.dropboxusercontent.com/u/488107/react/task1.png)
 
-### <a name="task2"></a>Task 2: Properties
+### Task 2: Properties
 
 > Each post should have three properties: title, author and content. Modify `Post` so it accepts properties, and modify `PostList` so that it provides properties for all posts.
 
@@ -138,7 +138,7 @@ Allright, let's quickly put up a skeleton for these components.
 ![Task 2](https://dl.dropboxusercontent.com/u/488107/react/task2.png)
 
 
-### <a name="task3"></a>Task 3: Load the posts from a list-variable
+### Task 3: Load the posts from a list-variable
 
 > Copy the post array underneath to the top of `app.js`. Now, instead of the posts you hardcoded into post-list, you will now load them from this array.
 
@@ -170,27 +170,27 @@ $ python -m SimpleHTTPServer
 
 #### API
 
-The API is fairly simple, it lets you create, get, edit and delete posts. You can read about it [here](#api).
+The API is fairly simple, it lets you create, get, edit and delete posts. You can read about it at the bottom of this README.
 
 
-### <a name="task4"></a>Task 4: Load posts from the API 
+### Task 4: Load posts from the API 
 
 > Load posts from the API
 
-### <a name="task5"></a>Task 5: Create a Form
+### Task 5: Create a Form
 
 
-### <a name="task6"></a>Task 6: Use the Form to Create Posts
+### Task 6: Use the Form to Create Posts
 
 
-### <a name="task7"></a>Task 7: Make the Blog Look Good
+### Task 7: Make the Blog Look Good
 
 
-### <a name="task8"></a>Task 8: Single-page Application
+### Task 8: Single-page Application
 
 
 
-## <a name="api"></a>API
+## API
 
 The API you can work against is located at http://course.abbsnabb.com/. 
 You will have to choose a name for your group, which you will use in the url to get unique data. An example for a group name is 'horny-panda'.
