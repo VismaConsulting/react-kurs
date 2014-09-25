@@ -108,17 +108,19 @@ Allright, let's quickly put up a skeleton for these components.
 
 > Create new components `PostList`, `PostForm` and `Post` with dummy text. You don't need an actual form with inputs and buttons. Place instances of `PostList` and `PostForm` inside `PostBox`. Place three instances of `Post` inside the `PostList`.
 
-It should look something like this:
-![Task 1](https://dl.dropboxusercontent.com/u/488107/react/task1.png)
-
 #### Hints
 
 * Check out [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456) to see how to include modules in eachother.
 
+It should look something like this:
+![Task 1](https://dl.dropboxusercontent.com/u/488107/react/task1.png)
 
 ### Task 2: Properties
 
 > Each post should have three properties: title, author and content. Modify `Post` so it accepts properties, and modify `PostList` so that it provides properties for all posts.
+
+#### Hint
+
 
 
 ### Task 3: Load the posts from a list-variable
