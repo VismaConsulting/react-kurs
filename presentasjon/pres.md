@@ -18,7 +18,13 @@ class: title, bottom
 
 * V in MVC 
 * Library, not framework
-* Virtuall DOM
+* Virtual DOM
+
+???
+
+* V og library betyr at React ikke krever å ta over hele applikasjonen din, slik som for eksempel Angular.js
+* Virtual DOM gjør at det går sykt fort å oppdatere, bare det som er forandret trengs å skrives.
+* Vi skal ikke touche så mye borti fordelene med virtuell DOM her. 
 
 ---
 class: middle, center
