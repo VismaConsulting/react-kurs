@@ -37,7 +37,7 @@ Did everyone understand? Allright, let's go!
 * Task 7: Style the app
 * Task 8: Create a single-post page
 
-### Task 0: Hello, World!
+###<a name="task0"></a> Task 0: Hello, World!
 
 > Do a Hello, World! in React. Use two files: `index.html` and `app.js`
 
@@ -87,7 +87,7 @@ We now have a functioning website, although not the prettiest one in the world. 
 
 ![Behold, the Internet](https://dl.dropboxusercontent.com/u/488107/react/helloworld.png)
 
-#### What was React about this?
+### What was React about this?
 
 * `React.createClass({});`
 * `React.renderComponent({});`
@@ -114,28 +114,33 @@ Each component is responsible for its own markup, for example: `PostList` doesn'
 
 Allright, let's quickly put up a skeleton for these components.
 
-### Task 1: Structure
+### <a name="task1"></a>Task 1: Structure
 
 > Create new components `PostList`, `PostForm` and `Post` with dummy text. You don't need an actual form with inputs and buttons. Place instances of `PostList` and `PostForm` inside `PostBox`. Place three instances of `Post` inside the `PostList`.
 
 #### Hints
 
-* Check out [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456) to see how to include modules in eachother.
+* Check out hint 1 at [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456#file-task1-hint-js) to see how to include modules in eachother.
 
-It should look something like this:
+
+#### End Result
 ![Task 1](https://dl.dropboxusercontent.com/u/488107/react/task1.png)
 
-### Task 2: Properties
+### <a name="task2"></a>Task 2: Properties
 
 > Each post should have three properties: title, author and content. Modify `Post` so it accepts properties, and modify `PostList` so that it provides properties for all posts.
 
 #### Hint
 
+* Check out hint 2 at [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456#file-task2-hint-js) to see how to use properties.
+
+#### End Result
+![Task 2](https://dl.dropboxusercontent.com/u/488107/react/task2.png)
 
 
-### Task 3: Load the posts from a list-variable
+### <a name="task3"></a>Task 3: Load the posts from a list-variable
 
-> You will have to display the posts contained in the posts-array underneath.
+> Copy the post array underneath to the top of `app.js`. Now, instead of the posts you hardcoded into post-list, you will now load them from this array.
 
 ```js
 var posts = [
@@ -145,36 +150,47 @@ var posts = [
 ];
 ```
 
+#### Hints
+
+* Check out hint 3 at [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456#file-task3-hint-js) to see how to load content from a variable.
+
+#### End Result
+![Task 3](https://dl.dropboxusercontent.com/u/488107/react/task3.png)
+
 ### Moving to a server
 
 From now on, we will use a server for storing and loading posts. To use a server, our index.html-file needs to be hosted on a server. To do that you can use the following command: 
+
+#### Serving your index.html file on HTTP
 
 ```bash
 $ cd /path/to/web/folder/
 $ python -m SimpleHTTPServer
 ```
 
-You can read about the API underneath.
+#### API
+
+The API is fairly simple, it lets you create, get, edit and delete posts. You can read about it [here](#api).
 
 
-### Task 4: Load posts from the API 
+### <a name="task4"></a>Task 4: Load posts from the API 
 
 > Load posts from the API
 
-### Task 5: Create a Form
+### <a name="task5"></a>Task 5: Create a Form
 
 
-### Task 6: Use the Form to Create Posts
+### <a name="task6"></a>Task 6: Use the Form to Create Posts
 
 
-### Task 7: Make the Blog Look Good
+### <a name="task7"></a>Task 7: Make the Blog Look Good
 
 
-### Task 8: Single-page Application
+### <a name="task8"></a>Task 8: Single-page Application
 
 
 
-## API
+## <a name="api"></a>API
 
 The API you can work against is located at http://course.abbsnabb.com/. 
 You will have to choose a name for your group, which you will use in the url to get unique data. An example for a group name is 'horny-panda'.
@@ -187,3 +203,19 @@ You will have to choose a name for your group, which you will use in the url to 
 |GET   | http://course.abbsnabb.com/:groupName/posts/:postId    | Fetches the post with the given postId    | application/json |
 |PUT   | http://course.abbsnabb.com/:groupName/posts/:postId    | Updates the post with the given postId    | application/json |
 |DELETE| http://course.abbsnabb.com/:groupName/posts/:postId    | Deletes the post with the given postId    | application/json |
+
+Remember to post your content with `contentType:'application/json'`.
+ 
+An example post-json looks like this:
+
+
+```js
+{
+    "title": "Breaking News, Pandas Are Horny",
+    "content": "That's a lie! They aren't. \nA major part of every successful species is being horny. There are certainly advantages and disadvantages to our own species’ obsession with cronking, but it was an absolute necessity for our hominid ancestors, as with all critters. If you aren’t making babies your numbers dwindle and you go extinct. Make babies! Not pandas, though. \nUnsurprisingly, these slothful bears have little interest in mating with each other. Their pitiful libido has been so frustrating to zoo keepers that scientists have done everything from showing them pornographic panda videos, to giving doses of Viagra to males. All for naught.",
+    "author": "Anders Emil Salvesen",
+    "lastUpdated": "2014-09-25T06:40:39.685Z",
+    "created": "2014-09-25T06:40:39.685Z",
+    "_id": "GP2aWMXv15PCBbpT"
+}
+```
