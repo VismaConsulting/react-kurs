@@ -27,6 +27,16 @@ Did everyone understand? Allright, let's go!
 
 ## Tasks
 
+* Task 0: Hello, World!
+* Task 1: Structure
+* Task 2: Properties
+* Task 3: Loading content from the outside
+* Task 4: Loading content from an API
+* Task 5: Create a form
+* Task 6: Create posts on the server
+* Task 7: Style the app
+* Task 8: Create a single-post page
+
 ### Task 0: Hello, World!
 
 > Do a Hello, World! in React. Use two files: `index.html` and `app.js`
