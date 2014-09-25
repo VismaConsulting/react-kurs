@@ -1,6 +1,6 @@
-# react.js-course
+# React.js-course
 
-Whatup? Here you'll get a great intro to react.
+Whatup? Here you'll get a great intro to React.
 
 ## Goal
 
