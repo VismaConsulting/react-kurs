@@ -5,7 +5,7 @@ Whatup? Here you'll get a great intro to react.
 ## Goal
 
 ### Blog
-At the end of this workshop, we will have created a blog. Blogs are awesome for showing how much you know about shopping and putting on make-up. Coincidentally,  they're also pretty great for learning new technologies.
+By the end of this workshop, we will have created a blog. Blogs are awesome for showing how much you know about shopping and putting on make-up. Coincidentally,  they're also pretty great for learning new technologies.
 
 Our blog will consist of one page with a list of blog posts, just like this:
 
@@ -64,7 +64,7 @@ We will only have two files, `index.html` and `app.js`. (For the js-geeks: React
 
 #### app.js
 
-```js
+```javascript
 /** @jsx React.DOM */
 
 var PostBox = React.createClass({
@@ -141,7 +141,7 @@ Allright, let's quickly put up a skeleton for these components.
 
 > Copy the post array underneath to the top of `app.js`. Now, instead of the posts you hardcoded into post-list, you will now load them from this array.
 
-```js
+```javascript
 var posts = [
     {title: "Post #1", author:"Anders Emil", content: "This is a typical post"},
     {title: "Post #2", author:"Anders Emil", content: "This is another typical post"},
@@ -251,7 +251,7 @@ Remember to post your content with `contentType:'application/json'`.
 An example post-json looks like this:
 
 
-```js
+```javascript
 {
     "title": "Breaking News, Pandas Are Horny",
     "content": "That's a lie! They aren't. \nA major part of every successful species is being horny. There are certainly advantages and disadvantages to our own species’ obsession with cronking, but it was an absolute necessity for our hominid ancestors, as with all critters. If you aren’t making babies your numbers dwindle and you go extinct. Make babies! Not pandas, though. \nUnsurprisingly, these slothful bears have little interest in mating with each other. Their pitiful libido has been so frustrating to zoo keepers that scientists have done everything from showing them pornographic panda videos, to giving doses of Viagra to males. All for naught.",
