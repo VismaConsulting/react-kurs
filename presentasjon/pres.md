@@ -29,7 +29,7 @@ class: middle, center
 
 # Work arrangement
 
-* [https://github.com/VismaConsulting/react-kurs/](https://github.com/VismaConsulting/react-kurs/)
+* [https://github.com/VismaConsulting/react-kurs/blob/master/README.md](https://github.com/VismaConsulting/react-kurs/blob/master/README.md)
 * Groups of two or three. Choose a group name now!
 * There will be a number of tasks. The first one we will do together, and the next ones you will do in your groups.
 * There will be prizes!
