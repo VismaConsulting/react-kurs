@@ -1,4 +1,4 @@
-class: title, center, middle, inverse
+class: title, bottom
 
 # REACT-kurs
 ## Visma Consulting-workshop for Online
