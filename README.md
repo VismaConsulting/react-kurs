@@ -223,11 +223,11 @@ You now have a fully functioning blog. What more do you need? Sit down and relax
 
 > You should poll the server every 2 seconds, so your users don't need to `F5` themselves.
 
-### Task 7: Make the Blog Look Good
+### Task 8: Make the Blog Look Good
 
 > The blog looks pretty horrendous right now, can you fix that?
 
-### Task 8: Routing
+### Task 9: Routing
 
 > Blogs normally let you view a single post. Can you create a page where you view a single post, and link the lists of posts to it?
 
