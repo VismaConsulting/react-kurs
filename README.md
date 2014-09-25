@@ -32,8 +32,9 @@ Did everyone understand? Allright, let's go!
 * Task 4: Loading content from an API
 * Task 5: Create a form
 * Task 6: Create posts on the server
-* Task 7: Style the app
-* Task 8: Create a single-post page
+* Bonus: Task 7: Poll the Server Every 2 Seconds 
+* Bonus: Task 8: Style the app
+* Bonus: Task 9: Create a single-post page
 
 ### Task 0: Hello, World!
 
