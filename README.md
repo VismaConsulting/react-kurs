@@ -17,11 +17,9 @@ We will also add a form for creating new posts.
 
 Our work arrangement will be like this:
 
-* We will split in groups of two or three
+* We will split in groups of two or three. Choose a group name now!
 * There will be a number of tasks. The first one we will do together, and the next ones you will do in your groups.
-* There will be prizes for the first group to complete each task.
-* There will be consolation prizes for group 2-∞ to finish each task.
-* There will be an awesome prize for the group who gets the furthest.
+* There will be prizes!
 
 Did everyone understand? Allright, let's go!
 
@@ -41,7 +39,7 @@ Did everyone understand? Allright, let's go!
 
 > Do a Hello, World! in React. Use two files: `index.html` and `app.js`
 
-We will only have two files, `index.html` and `app.js`. React plays very well with frameworks that splits your webapp into modules, like browserify, webpack and require.js, but we will not touch on that in this course.
+We will only have two files, `index.html` and `app.js`. (For the js-geeks: React plays very well with frameworks that splits your webapp into modules, like browserify, webpack and require.js, but we will not touch on that in this course.)
 
 #### index.html
 
@@ -128,7 +126,7 @@ Allright, let's quickly put up a skeleton for these components.
 
 ### Task 2: Properties
 
-> Each post should have three properties: title, author and content. Modify `Post` so it accepts properties, and modify `PostList` so that it provides properties for all posts.
+> Modify `Post` so it accepts properties, and modify `PostList` so that it provides properties for all posts. Each post should have three properties: title, author and content. 
 
 #### Hint
 
@@ -168,26 +166,69 @@ $ cd /path/to/web/folder/
 $ python -m SimpleHTTPServer
 ```
 
+If you haven't got python, ask and we will help you serve the file.
+
 #### API
 
-The API is fairly simple, it lets you create, get, edit and delete posts. You can read about it at the bottom of this README.
+The API is fairly simple, it lets you create, get, edit and delete posts. You can read about it at the bottom of this file.
 
 
 ### Task 4: Load posts from the API 
 
-> Load posts from the API
+> Put your group name in the url to the post-api. Use it to get posts from the server.
+
+This one sounds trickier than the first tasks, but fear not, it's pretty ok. Just use the hints for what it's worth.
+
+#### Hints
+
+* Check out hint 4 at [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456#file-task4-hint-js) to see how to load content from a url.
+
+#### End Result
+![Task 4](https://dl.dropboxusercontent.com/u/488107/react/task4.png)
 
 ### Task 5: Create a Form
 
+> You should now replace the content in the render-function in `PostForm` with a real form.
+
+#### Hints
+
+* You don't need to handle the submit-button before the next task.
+* Check out hint 5 at [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456#file-task5-hint-js) to see how to make a form.
+
+#### End Result
+
+![Task 5](https://dl.dropboxusercontent.com/u/488107/react/task5.png)
 
 ### Task 6: Use the Form to Create Posts
 
+> You should now create a function in `PostForm` to handle clicks on the submit-button. The submitted data should be sent in a POST-call to the API, and you should update the list of posts immediately.
+
+#### Hints
+
+* Check out hint 6 at [this gist](https://gist.github.com/andersem/7a5b1f07ce29e7f1b456#file-task6-hint-js) to see how to handle submits.
+
+#### End Result
+
+![Task 6](https://dl.dropboxusercontent.com/u/488107/react/task6.png)
+
+
+### Congratulations
+
+You now have a fully functioning blog. What more do you need? Sit down and relax, or start the bonus tasks.
+
+## Bonus tasks
+
+### Task 7: Poll the server every 2 seconds
+
+> You should poll the server every 2 seconds, so your users don't need to `F5` themselves.
 
 ### Task 7: Make the Blog Look Good
 
+> The blog looks pretty horrendous right now, can you fix that?
 
-### Task 8: Single-page Application
+### Task 8: Routing
 
+> Blogs normally let you view a single post. Can you create a page where you view a single post, and link the lists of posts to it?
 
 
 ## API
