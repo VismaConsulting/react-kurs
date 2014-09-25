@@ -45,9 +45,7 @@ class: middle, center
 * Task 4: Loading content from an API
 * Task 5: Create a form
 * Task 6: Create posts on the server
-* Bonus: Task 7: Poll the Server Every 2 Seconds 
-* Bonus: Task 8: Style the app
-* Bonus: Task 9: Create a single-post page
+* 3 bonus tasks
 
 ---
 class: end-value
